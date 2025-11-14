@@ -1,0 +1,97 @@
+:root {
+    --bg-purple: #8249ff;
+    --outline-purple: #3B29A5;
+    --hand-cream: #F7EFFA;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0;
+    background-color: var(--bg-purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font: verdana, ;
+}
+
+.center-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 4rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.5rem; 
+    flex-wrap: wrap;
+    margin-top: 0rem;
+}
+
+.buttonGroup button {
+    font-size: 1.5rem; 
+    padding: 0.8em 1.5em;
+    text-align: center;
+    width: 10rem;
+    border: 0.125rem solid var(--outline-purple);
+    box-sizing: border-box;
+    background-color: var(--hand-cream);
+    color: var(--outline-purple);
+    border-radius: 0.625rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 0 auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+.image-container img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+}
+
+
+@media (max-width: 600px) {
+.buttonGroup {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.buttonGroup button {
+    width: 90%;
+    font-size: 1em;
+    padding: 0.6em 1.2em;
+    text-align: center;
+    box-sizing: border-box;
+    letter-spacing: 0.03em;
+}
+
+h1 {
+    font-size: 2rem;
+}
+}
