@@ -1,14 +1,34 @@
-function check() {
+function playRock() {
+    playGame("rock");
+}
 
-    if(age>=18){
-    if(name=="Sam"){
-        document.getElementById("placeholder").innerHTML="You are barred!";
-    }else{
-        document.getElementById("placeholder").innerHTML="Welcome, "+name+"!";
+function playPaper() {
+    playGame("paper");
+}
+
+function playScissors() {
+    playGame("scissors");
+}
+
+function playGame(userChoice) {
+    const choices = ["rock", "paper", "scissors"];
+    const computerChoice = choices[Math.floor(Math.random() * 3)];
+
+    let result = "";
+
+    if (userChoice === computerChoice) {
+        result = "It's a draw!";
+    } else if (
+        (userChoice === "rock" && computerChoice === "scissors") ||
+        (userChoice === "paper" && computerChoice === "rock") ||
+        (userChoice === "scissors" && computerChoice === "paper")
+    ) {
+        result = "You win!";
+    } else {
+        result = "You lose!";
     }
-    }else if(age<18){
-        document.getElementById("placeholder").innerHTML="Go away, "+name+"!";
-    }else{
-        alert("Invalid input!");
-    }
+
+    alert(
+        `You chose ${userChoice}.\nComputer chose ${computerChoice}.\n${result}`
+    );
 }
