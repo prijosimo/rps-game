@@ -61,6 +61,12 @@ h2 {
     margin: 0 auto;
 }
 
+.buttonGroup button:hover {
+    background-color: var(--outline-purple);
+    color: var(--hand-cream);
+    transform: scale(1.05);
+}
+
 .image-container {
     display: flex;
     justify-content: center;
