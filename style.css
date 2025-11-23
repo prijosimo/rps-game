@@ -100,4 +100,28 @@ h2 {
 h1 {
     font-size: 2rem;
 }
+
+.results-box {
+    background-color: var(--hand-cream);
+    border: 0.125rem solid var(--outline-purple);
+    border-radius: 0.625rem;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    color: var(--outline-purple);
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(59, 41, 165, 0.2);
+}
+
+.results-box h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--outline-purple);
+}
+
+.results-box p {
+    margin: 0.5rem 0;
+}
 }
